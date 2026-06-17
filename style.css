@@ -1,0 +1,636 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0b0b;
+  color: #d8d8d8;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 10, 10, 0.92);
+  border-bottom: 1px solid #2d2d2d;
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  color: #d8d8d8;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  color: #dc2626;
+}
+
+.hero {
+  min-height: 90vh;
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.86)),
+    linear-gradient(135deg, #0b0b0b, #18181b, #111827);
+}
+
+.eyebrow {
+  color: #dc2626;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(3.4rem, 5vw, 6.7rem);
+  line-height: 0.95;
+  margin: 16px 0 24px;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.45rem;
+  color: #b0b0b0;
+  max-width: 850px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 28px;
+  background: #991b1b;
+  color: white;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  transition: 0.25s;
+}
+
+.button:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+.placeholder {
+  border: 1px dashed #555;
+  background: #151515;
+  color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.hero-visual {
+    height: 650px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+main {
+  padding: 80px 8%;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.section-heading h2 {
+  font-size: 3.2rem;
+  color: white;
+  border-left: 4px solid #991b1b;
+  padding-left: 16px;
+}
+
+.section-heading p {
+  font-size: 1.3rem;
+  color: #a3a3a3;
+  max-width: 850px;
+  margin-top: 12px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.project-card {
+  background: #151515;
+  border: 1px solid #2d2d2d;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.25s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #991b1b;
+  box-shadow: 0 10px 30px rgba(153, 27, 27, 0.25);
+}
+
+.project-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+.project-content {
+  padding: 24px;
+}
+
+.project-content h3 {
+  font-size: 1.9rem;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.project-content p {
+  font-size: 1.15rem;
+  color: #b0b0b0;
+  margin-bottom: 16px;
+}
+
+.project-content span {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.skills-grid span {
+  background: #151515;
+  border: 1px solid #333;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+}
+
+.about p,
+.contact p {
+  font-size: 1.45rem;
+  color: #b0b0b0;
+  max-width: 900px;
+}
+
+.contact a {
+  color: #dc2626;
+}
+
+footer {
+  padding: 40px 8%;
+  text-align: center;
+  border-top: 1px solid #2d2d2d;
+  color: #777;
+}
+
+/* Project Pages */
+
+.project-page {
+  padding: 80px 8%;
+}
+
+.project-hero {
+  margin-bottom: 70px;
+}
+
+.back-link {
+  color: #dc2626;
+  font-size: 1.1rem;
+}
+
+.project-hero h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  color: white;
+  line-height: 1;
+  margin: 24px 0;
+}
+
+.project-summary {
+  font-size: 1.45rem;
+  color: #b0b0b0;
+  max-width: 950px;
+}
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.project-section {
+  background: #151515;
+  border: 1px solid #2d2d2d;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.project-section h2 {
+  font-size: 2.3rem;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.project-section p,
+.project-section li {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+
+.project-section ul {
+  padding-left: 24px;
+}
+
+.visual-large {
+  min-height: 360px;
+  border-radius: 14px;
+  margin-bottom: 28px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 850px) {
+  .hero,
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    margin: 0 8px;
+  }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0b0b;
+  color: #d8d8d8;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 10, 10, 0.92);
+  border-bottom: 1px solid #2d2d2d;
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  color: #d8d8d8;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  color: #dc2626;
+}
+
+.hero {
+  min-height: 90vh;
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.86)),
+    linear-gradient(135deg, #0b0b0b, #18181b, #111827);
+}
+
+.eyebrow {
+  color: #dc2626;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(3.4rem, 5vw, 6.7rem);
+  line-height: 0.95;
+  margin: 16px 0 24px;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.45rem;
+  color: #b0b0b0;
+  max-width: 850px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 28px;
+  background: #991b1b;
+  color: white;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  transition: 0.25s;
+}
+
+.button:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+.placeholder {
+  border: 1px dashed #555;
+  background: #151515;
+  color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.hero-visual {
+    height: 650px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+main {
+  padding: 80px 8%;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.section-heading h2 {
+  font-size: 3.2rem;
+  color: white;
+  border-left: 4px solid #991b1b;
+  padding-left: 16px;
+}
+
+.section-heading p {
+  font-size: 1.3rem;
+  color: #a3a3a3;
+  max-width: 850px;
+  margin-top: 12px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.project-card {
+  background: #151515;
+  border: 1px solid #2d2d2d;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.25s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #991b1b;
+  box-shadow: 0 10px 30px rgba(153, 27, 27, 0.25);
+}
+
+.project-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+.project-content {
+  padding: 24px;
+}
+
+.project-content h3 {
+  font-size: 1.9rem;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.project-content p {
+  font-size: 1.15rem;
+  color: #b0b0b0;
+  margin-bottom: 16px;
+}
+
+.project-content span {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.skills-grid span {
+  background: #151515;
+  border: 1px solid #333;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+}
+
+.about p,
+.contact p {
+  font-size: 1.45rem;
+  color: #b0b0b0;
+  max-width: 900px;
+}
+
+.contact a {
+  color: #dc2626;
+}
+
+footer {
+  padding: 40px 8%;
+  text-align: center;
+  border-top: 1px solid #2d2d2d;
+  color: #777;
+}
+
+/* Project Pages */
+
+.project-page {
+  padding: 80px 8%;
+}
+
+.project-hero {
+  margin-bottom: 70px;
+}
+
+.back-link {
+  color: #dc2626;
+  font-size: 1.1rem;
+}
+
+.project-hero h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  color: white;
+  line-height: 1;
+  margin: 24px 0;
+}
+
+.project-summary {
+  font-size: 1.45rem;
+  color: #b0b0b0;
+  max-width: 950px;
+}
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.project-section {
+  background: #151515;
+  border: 1px solid #2d2d2d;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.project-section h2 {
+  font-size: 2.3rem;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.project-section p,
+.project-section li {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+
+.project-section ul {
+  padding-left: 24px;
+}
+
+.visual-large {
+  min-height: 360px;
+  border-radius: 14px;
+  margin-bottom: 28px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 850px) {
+  .hero,
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    margin: 0 8px;
+  }
+>>>>>>> 4660305 (Initial Portfolio)
+}
