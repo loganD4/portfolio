@@ -300,6 +300,17 @@ footer {
   grid-column: 1 / -1;
 }
 
+.pdf-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+
 @media (max-width: 850px) {
   .hero,
   .project-layout {
