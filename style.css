@@ -329,15 +329,16 @@ footer {
 .video-section {
     max-width: 1100px;
     margin: 40px auto;
-    text-align: center;
 }
 
-.demo-video {
-    display: block;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    border-radius: 8px;
+.video-card {
+    background: #151515;
+    border: 1px solid #2d2d2d;
+    border-radius: 14px;
+    padding: 20px;
+}
+.video-section h2 {
+    text-align: center;
 }
 
 @media (max-width: 850px) {
