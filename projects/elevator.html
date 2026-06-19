@@ -30,8 +30,11 @@
     <div class="project-section">
       <h2>Objective</h2>
       <p>
-        Design an elevator controller capable of responding to multiple floor requests,
-        tracking the current floor, selecting a target floor, and stopping at requested floors.
+        <!-- Design an elevator controller capable of responding to multiple floor requests,
+        tracking the current floor, selecting a target floor, and stopping at requested floors. -->
+        With the goal of learning more about PLC design I wanted to build an elevator controller capable of responding
+        to multiple floor requests and tracking the current floor.
+
       </p>
     </div>
 
@@ -41,6 +44,7 @@
         <li>Built the ladder logic structure in Rockwell Connected Components Workbench.</li>
         <li>Created global/controller variables for floor requests and elevator state.</li>
         <li>Implemented motor direction logic for up/down travel.</li>
+        <li>Implemented E-Stop feature to allow for stopping and returning to current state.</li>
         <li>Added stop conditions based on current floor and active requests.</li>
         <li>Reworked the program into a state-machine style structure.</li>
       </ul>
@@ -60,8 +64,7 @@
       <h2>Results</h2>
       <p>
         The final program operated as a working elevator state machine across multiple scripts,
-        with request memory and floor-based stopping behavior. Add screenshots, timing behavior,
-        and final test results here.
+        with request memory and floor-based stopping behavior. 
       </p>
     </div>
 
