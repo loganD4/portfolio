@@ -179,6 +179,12 @@ section {
     object-fit: cover;
     display: block;
 }
+.large-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
 .project-content {
   padding: 24px;
 }
@@ -291,9 +297,11 @@ footer {
 }
 
 .visual-large {
-  min-height: 360px;
-  border-radius: 14px;
-  margin-bottom: 28px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 3rem auto;
+ 
+    
 }
 
 .full-width {
@@ -344,9 +352,10 @@ footer {
 
 @media (max-width: 850px) {
   .hero,
-  .project-layout {
-    grid-template-columns: 1fr;
-  }
+.project-layout {
+    columns: 2;
+    column-gap: 2rem;
+}
 
   nav {
     flex-direction: column;

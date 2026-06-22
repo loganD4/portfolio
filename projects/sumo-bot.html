@@ -20,11 +20,15 @@
       earning 3rd place in competition.
     </p>
   </section>
-
-  <div class="visual-large placeholder">
-    Add photo of robot, competition setup, or sensor layout.
+<section class = "large-image">
+  <div class="visual-large">
+    <img
+        class="large-image"
+        src="../images/sumo-title-card.jpeg"
+        alt="sumo index picture"
+      />
   </div>
-
+</section>
   <section class="project-layout">
 
     <div class="project-section">
@@ -32,6 +36,12 @@
       <p>
         Build and program a robot capable of detecting opponents, staying inside the ring,
         and reacting quickly during a sumo-style robotics competition.
+           <br/>
+        <br/>
+           <br/>
+        <br/>
+    
+
       </p>
     </div>
 
@@ -42,6 +52,8 @@
         <li>Implemented sensor-based opponent detection.</li>
         <li>Tested and adjusted control behavior for competition performance.</li>
         <li>Contributed to strategy and debugging before competition.</li>
+           <br/>
+ 
       </ul>
     </div>
 
@@ -49,8 +61,12 @@
       <h2>Technical Details</h2>
       <ul>
         <li>Programming language: C++</li>
-        <li>Sensor system: add exact sensor/LIDAR details here</li>
-        <li>Control strategy: add search/attack/avoid behavior here</li>
+        <li>Sensor system: 8 Garmin LiDAR sensors arranged around the robot, with 5 along the front.
+            Communicated using I2C
+        </li>
+        <li>Control strategy: Detect which direction had an object within 15 inches, set target angle for PID,
+            rotate until front end aligns and accelerate toward opponent.
+        </li>
         <li>Result: 3rd place</li>
       </ul>
     </div>
@@ -58,8 +74,21 @@
     <div class="project-section">
       <h2>Results</h2>
       <p>
-        The robot placed 3rd in competition. Add more detail about what performed well,
-        what failed, and what you would improve in a second version.
+        The robot placed 3rd in competition. 
+        <br/>
+        <br/>
+        The robot's programming worked as expected given time constraints. System was reliable
+        but provided too much time should the opponent choose to start their robot ahead of the mandatory
+        5 second delay. 
+        <br/>
+        <br/>
+        The physical system allowed for many hits from opponents, but the 3D printed gears were at risk of shearing
+        should the motors go full out. Due to the gearing system one side's electronic speed controller must be in reverse
+        which is electronically limits itself to ~80% maximum throttle. 
+        <br/>
+        <br/>
+        Had we chosen to make modifications after competition more of the gears would've been made from a carbon-fiber filament, along with proper gearing directions
+        to allow for full use of the motors.
       </p>
     </div>
 

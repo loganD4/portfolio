@@ -21,22 +21,37 @@
     </p>
   </section>
 
-  <div class="visual-large placeholder">
+  <!-- <div class="visual-large placeholder">
     Add plot of angle response, control torque, or filter comparison.
-  </div>
+  </div> -->
 
   <section class="project-layout">
 
     <div class="project-section">
       <h2>Objective</h2>
       <p>
-        Simulate the stabilization of an angular system using PID control and compare how
-        sensor noise and filtering affect controller performance.
+        <!-- Simulate the stabilization of an angular system using PID control and compare how
+        sensor noise and filtering affect controller performance. -->
+
+        I was interested in learning more about the effects of different filters and how they can help
+        a noisy signal. By starting with the raw data and a simple rolling average I was able to understand the 
+        strengths and weakness of one of the simplest fixes.
+        
+<br/>
+
+<br/>
+        While researching to understand the Kalman filter I stumbled upon the <br/> alpha - beta - gamma (a-b-g) filter and thought
+        it would be a good middle ground in terms of usefullness and ease of application for this project.
+        
+<br/>
+
+<br/>
+        The final step was to compare the effects of each filtering technique side by side to allow for proper comparison.
       </p>
     </div>
 
     <div class="project-section">
-      <h2>My Contribution</h2>
+      <h2>My Contribution</h2>     
       <ul>
         <li>Built a Python physics simulation for angular motion.</li>
         <li>Implemented PID control with proportional, integral, and derivative terms.</li>
@@ -52,15 +67,29 @@
         <li>Language: Python</li>
         <li>Libraries: NumPy, Matplotlib</li>
         <li>Concepts: PID, damping, disturbance response, filtering, sensor noise</li>
-        <li>Initial condition: add angle/system setup here</li>
       </ul>
     </div>
 
     <div class="project-section">
       <h2>Results</h2>
       <p>
-        Add specific plots and conclusions here. For example: settling time, overshoot,
-        disturbance rejection, filter delay, and measurement noise reduction.
+        <img
+        class="project-image"
+        src="../images/filter-data-zoomed.png"
+        alt="filter data"
+      />
+        <br/>
+        In this chart I have plotted the different angle readings as well as the PID response to 
+        the Kalman filter. Both the true angle of the simulation as well as the noisy sensor data are plotted
+        as a reference for what the filters will be judged off of.
+        <br/>
+        <br/>
+        As you can see the Kalman filter had the best results. The rolling average was accurate but generally lagged
+        behing the true value. The a-b-g filter does struggle with the noise, some of this could be fixed with finer 
+        tuning but that has yet to occur.
+
+
+
       </p>
     </div>
 
