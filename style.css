@@ -314,6 +314,28 @@ footer {
 .project-links a:hover {
     background: #d42b3e;
 }
+.project-links {
+    margin-top: 2rem;
+}
+
+.project-link-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+
+    background: #b11226;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition: background 0.2s ease,
+                transform 0.2s ease;
+}
+
+.project-link-button:hover {
+    background: #d42b3e;
+    transform: translateY(-2px);
+}
 
 .visual-large {
     width: 100%;
@@ -384,5 +406,124 @@ footer {
   .nav-links a {
     margin: 0 8px;
   }
+
  
+}
+.timeline-section{
+    max-width:900px;
+    margin:5rem 3;
+}
+
+.timeline{
+    position:relative;
+    margin-top:3rem;
+    padding-left:40px;
+    border-left:3px solid #8b1e1e;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:3rem;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:-51px;
+    top:8px;
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+    background:#8b1e1e;
+    border:3px solid #1b1b1b;
+}
+
+.timeline-content h3{
+    margin:0;
+}
+
+.timeline-date{
+    color:#888;
+    font-size:1.0rem;
+}
+
+.timeline-content p{
+    margin:.5rem 0;
+}
+
+.featured .timeline-dot{
+    width:22px;
+    height:22px;
+    background:#c62828;
+}
+.company {
+    margin: .35rem 0;
+    color: #cfcfcf;
+}
+
+.timeline-skills {
+    margin-bottom: .8rem;
+    color: #b43a3a;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+}
+
+.timeline-details {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #a9a9a9;
+    line-height: 2.0;
+}
+
+.timeline-details li {
+    margin-bottom: .35rem;
+}
+
+.timeline-row{
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.timeline-content{
+    flex: 1;
+}
+
+.timeline-photo{
+    flex: 0 0 320px;
+    margin-left: auto;
+}
+
+.timeline-photo img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid #8b1e1e;
+}
+.restore-row{
+    display:flex;
+    align-items:flex-start;
+}
+
+.restore-row .timeline-content{
+    flex:1;
+}
+
+.restore-photo{
+    width:420px;
+    margin-left:auto;
+    flex-shrink:0;
+}
+
+.restore-photo img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid #8b1e1e;
+}
+.restore-timeline{
+    max-width:1400px;
+    width:100%;
 }
