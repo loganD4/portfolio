@@ -96,23 +96,36 @@
       </ul>
     </div>
 
-    <div class="project-section">
+    <div class="project-section full-width">
       <h2>Results</h2>
       <p>
         <img
         class="project-image"
-        src="../images/filter-data-zoomed.png"
+        src="../images/angleComparison.png"
         alt="filter data"
       />
         <br/>
-        In this chart I have plotted the different angle readings as well as the PID response to 
-        the Kalman filter. Both the true angle of the simulation as well as the noisy sensor data are plotted
+        In this chart I have plotted the different angle readings compared to the true angle. The noisy sensor data are plotted
         as a reference for what the filters will be judged off of.
         <br/>
         <br/>
         As you can see the Kalman filter had the best results. The rolling average was accurate but generally lagged
         behing the true value. The a-b-g filter does struggle with the noise, some of this could be fixed with finer 
         tuning but that has yet to occur.
+
+        <img
+        class="project-image"
+        src="../images/allPIDresponse.png"
+        alt="so many responses"
+        />
+        <p>
+          I have also elected to graph the PID response of the attitude given each filtering option as an input. 
+          <br/>
+          <br/>
+          As expected the Kalman Filter does the best, followed by the a-b-g. The rolling average does poorly due to the lag
+          contributed by attempting to average 5 samples and giving a late input to the PID. This is what causes it to always be oscillating.
+
+        </p>
 
 
 
